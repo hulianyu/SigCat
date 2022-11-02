@@ -135,7 +135,8 @@ for I=1:4
     disp("HD-NDW");
     Pi = zeros(size(X,1),ET);
     tic
-    ordinal_num = floor(M/2);% half of all
+%     ordinal_num = floor(M/2);% half of all
+    ordinal_num = 0;
     for runs = 1:ET
         pi_runs = HD_NDW_Clustering(X,K,ordinal_num);
         Pi(:,runs) = pi_runs;
